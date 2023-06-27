@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #222;
+}
+
+.img-logo {
+    margin-top: 32px;
+}
+
+.RM{
+    text-align: center;
+    border-radius: 16px;
+    margin-bottom: 128px;
+}
+
+.RM h1{
+    font-family: 'Mochiy Pop P One', sans-serif;
+    font-size: 192px;
+    color: #FFFDFA;
+    padding-bottom: 32px;
+}
+
+.characters ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 8px;
+    margin-left: 32px;
+}
+
+.characters li{
+    flex-basis: calc(25% - 16px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    border: 2px solid #FFFDFA;
+    border-radius: 8px;
+}
+
+.characters li img{
+    border-radius: 8px;
+    margin-top: 16px;
+    box-shadow: 4px 4px 16px #222;
+}
+
+.characters li p{
+    font-family: 'Mochiy Pop P One', sans-serif;
+    color: #FFFDFA;
+    margin-bottom: 16px;
+}
+
+.characters li h4 {
+    font-family: 'Mochiy Pop P One', sans-serif;
+    color: #FFFDFA;
+    margin-bottom: -8px;
+}
+
+.characters ul li:hover{
+    background-color: #233b29;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 64px;
+    gap: 16px;
+}
+
+.btn-container img{
+    display: flex;
+    align-items: center;
+}
+
+.btn-container button{
+    padding: 16px;
+    background-color: #233b29;
+    border: none;
+    border-radius: 4px;
+    transition: 100ms;
+    cursor: url(./assets/RickCursor.png), pointer;
+}
+
+.btn-container button:hover{
+    background-color: #222;
+    color: #FFFDFA;
+    outline: none;
+    box-shadow: 0 0 0 2px #fffdfa;
+}
+
+.btn-container label{
+    color: #FFFDFA;
+}
+
+.btn-container input{
+    color: #222;
+    width: 400px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 200ms;
+}
+
+.footer{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #233b29;
+    margin: 16px 32px;
+    border-radius: 16px;
+    padding: 64px 32px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-container01{
+    color: #FFFDFA;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    width: 50vw;
+    margin: 0 64px;
+    border-left: 1px solid #FFFDFA;
+    padding: 32px;
+    border-radius: 16px;
+}
+
+.footer-container01 img{
+    margin-bottom: -8px;
+}
+
+
+.footer-container02{
+    color: #FFFDFA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+    width: 50vw;
+    margin: 0 64px;
+    border-right: 1px solid #FFFDFA;
+    padding: 32px;
+    border-radius: 16px;
+}
+
+.p-img{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.p-img p{
+    margin-top: 16px;
+    text-align: center;
+    
+}
+
+.footer-container01 img:hover{
+    cursor: url(./assets/RickCursor.png),
+    pointer;
+}
+
+
+    
+
