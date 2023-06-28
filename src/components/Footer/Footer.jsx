@@ -3,13 +3,12 @@ export default function Footer() {
     <>
       <div className="footer">
         <div className="footer-container01">
-          {/* <img width="100px" src="./src/assets/icons8-jerry-smith.svg" alt="" /> */}
           <img
             width="50px"
-            className="img-logo"
             src="./src/assets/rick_morty.png"
+            alt="Morty-Cabreado"
           ></img>
-          <h2>Gracias por visitarme!</h2>
+          <h2>Gracias por la visita!</h2>
           <p>
             Rick y Morty es una serie de televisión estadounidense de animación
             para adultos creada por Justin Roiland y Dan Harmon en 2013 para
@@ -17,9 +16,12 @@ export default function Footer() {
           </p>
         </div>
         <div className="footer-container02">
-          <p>Estas aburrido? Ya sabes donde ir!</p>
           <a href="https://www.hbomax.com/es/es/series/urn:hbo:series:GXkRjxwjR68PDwwEAABKJ">
-            <img width="60px" src="./src/assets/icons8-hbo.svg"></img>
+            <img
+              width="60px"
+              src="./src/assets/icons8-hbo.svg"
+              alt="Icono-HBO"
+            ></img>
           </a>
           <div className="p-img">
             <p>
