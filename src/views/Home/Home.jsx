@@ -1,20 +1,24 @@
 import Homeviews from "./Homeview";
-import UseFetch from "../../components/useFetch/UseFetch";
-import {Suspense} from "react";
+// import UseFetch from "../../components/useFetch/UseFetch";
+import {useEffect, useState} from "react";
 
-let page = Math.floor(Math.random() * 20) + 1;
-
-const apiData = UseFetch(
-  `https://rickandmortyapi.com/api/character?page=${page}`
-);
+// const apiData = UseFetch(`https://rickandmortyapi.com/api/character`);
 
 export default function Home() {
-  const data = apiData.read();
+  const [characters, setCharacters] = useState(null);
+
+  useEffect(function () {
+    async function fetchData() {
+      const response = await fetch(`https://rickandmortyapi.com/api/character`);
+      const charactersData = await response.json();
+      setCharacters(charactersData);
+    }
+    fetchData();
+  }, []);
+  // const data = apiData.read();
   return (
     <>
-      <Suspense fallback={<div>Loagind...</div>}>
-        <Homeviews dataApi={data} />
-      </Suspense>
+      <Homeviews charactersInfo={characters} />
     </>
   );
 }

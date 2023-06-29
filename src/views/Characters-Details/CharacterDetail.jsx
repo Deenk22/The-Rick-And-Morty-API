@@ -1,9 +1,27 @@
+import {useParams} from "react-router-dom";
+import {useState} from "react";
+import {useEffect} from "react";
+import CharacterInfoView from "./CharacterInfoView";
+
 export default function CharacterDetails() {
+  const [infoPersonaje, setInfoPersonaje] = useState(null);
+
+  useEffect(function () {
+    async function fetchDetail() {
+      const response = await fetch(
+        `https://rickandmortyapi.com/api/character/${id}`
+      );
+      const resInfo = await response.json();
+      setInfoPersonaje(resInfo);
+    }
+    fetchDetail();
+  }, []);
+
+  const {id} = useParams();
+
   return (
     <>
-      <div>
-        <h1 className="prox">PROXIMAMENTE..</h1>
-      </div>
+      <CharacterInfoView info={infoPersonaje} />
     </>
   );
 }

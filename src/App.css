@@ -9,7 +9,7 @@
 
 body {
     background-color: #222;
-    cursor: url(./assets/UFO.png), pointer;
+    /* cursor: url(./assets/UFO.png), pointer; */
 }
 
 .nav{
@@ -103,7 +103,7 @@ body {
 
 .characters ul li:hover{
     background-color: #233b29;
-    cursor: url(./assets/Monster2.png), pointer;
+    /* cursor: url(./assets/Monster2.png), pointer; */
 }
 
 .link-characters{
@@ -247,6 +247,44 @@ body {
     animation-direction: normal;
     animation-fill-mode: none; */
 }
+
+/* CHARACTERS INFO */
+
+.details-character h1,p{
+    display: inline-block;
+}
+
+.details-character h1{
+    font-family: 'Architects Daughter', cursive;
+    font-size: 40px;
+    color: #eeee29;
+}
+
+.details-character img{
+    border-radius: 8px;
+}
+
+.details-character{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    margin: 0px 32px 32px 32px;
+    gap: 16px;
+    border: 2px solid #233b29;
+    padding: 32px;
+    background-color: #233b296c;
+}
+
+.para-info{
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: #FFFDFA;
+}
+
+
 
 
     

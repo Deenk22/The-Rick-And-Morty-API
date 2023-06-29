@@ -4,7 +4,6 @@ export default function Navbar() {
     <>
       <div className="nav">
         <Link to="/">HOME</Link>
-        <Link to="characters-details">CHARACTER DETAILS</Link>
       </div>
     </>
   );

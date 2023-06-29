@@ -1,10 +1,10 @@
 import {Link} from "react-router-dom";
-export default function Homeviews({dataApi}) {
+export default function Homeviews({charactersInfo}) {
   return (
     <>
       <div className="characters">
         <ul>
-          {dataApi?.results.map((character) => (
+          {charactersInfo?.results.map((character) => (
             <li key={character.id}>
               <img
                 className="img-back"
@@ -13,7 +13,7 @@ export default function Homeviews({dataApi}) {
               ></img>
               <h4 className="name">{character.name}</h4>
               <p>{character.location.name}</p>
-              <Link className="link-characters" to={"characters-details"}>
+              <Link className="link-characters" to={`/${character.id}`}>
                 Details
               </Link>
             </li>
