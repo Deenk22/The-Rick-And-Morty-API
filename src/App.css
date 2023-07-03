@@ -284,6 +284,28 @@ body {
     color: #FFFDFA;
 }
 
+.back-home{
+    font-family: 'Architects Daughter', cursive;
+    text-decoration: none;
+    color: #eeee29;
+}
+
+.bio{
+    font-family: 'Architects Daughter', cursive;
+    color: #FFFDFA;
+    text-align: center;
+    margin: 0px 32px 16px 32px;
+}
+
+.title-bio{
+    font-family: 'Architects Daughter', cursive;
+    color: #eeee29;
+    font-size: 64px;
+    text-align: center;
+    margin: 0px 0px 32px 0px;
+
+}
+
 
 
 

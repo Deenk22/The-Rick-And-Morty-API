@@ -3,6 +3,7 @@ import {Routes, Route} from "react-router-dom";
 import Layout from "./components/Layout";
 import Home from "./views/Home/Home";
 import CharacterDetails from "./views/Characters-Details/CharacterDetail";
+import About from "./views/About/About";
 // import Search from "./components/Search/Search";
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
         <Route path="/:id" element={<CharacterDetails />} />
+        <Route path="about" element={<About />} />
       </Route>
     </Routes>
   );

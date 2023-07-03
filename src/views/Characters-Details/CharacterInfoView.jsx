@@ -1,6 +1,7 @@
+import {Link} from "react-router-dom";
+
 // eslint-disable-next-line react/prop-types
 export default function CharacterInfoView({info}) {
-  console.log(info);
   return (
     <>
       {info ? (
@@ -12,6 +13,9 @@ export default function CharacterInfoView({info}) {
             <p>Species: {info.species}</p>
             <p>Gender: {info.gender}</p>
             <p>Location: {info.location.name}</p>
+            <Link className="back-home" to="/">
+              Back to Home
+            </Link>
           </div>
         </div>
       ) : null}
