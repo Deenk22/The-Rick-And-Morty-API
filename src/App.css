@@ -9,7 +9,7 @@
 
 body {
     background-color: #222;
-    /* cursor: url(./assets/UFO.png), pointer; */
+    cursor: url(./assets/UFO.png), pointer;
 }
 
 .nav{
@@ -303,8 +303,42 @@ body {
     font-size: 64px;
     text-align: center;
     margin: 0px 0px 32px 0px;
-
 }
+
+.link-tologin{
+    font-family: 'Architects Daughter', cursive;
+    color: #eeee29;
+    text-align: center;
+}
+
+.link-tologin button{
+    margin-top: 16px;
+}
+
+.form-login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 16px;
+}
+
+.form-login h1{
+    font-family: 'Architects Daughter', cursive;
+    color: #eeee29;
+}
+
+.text-info{
+    text-align: center;
+}
+
+.text-info p{
+    font-family: cursive;
+    color: #FFFDFA;
+    margin-top: 40px;
+}
+
 
 
 
