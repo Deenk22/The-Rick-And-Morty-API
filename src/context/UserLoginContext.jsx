@@ -5,13 +5,23 @@ const UserLoginContext = createContext({
   login: () => {},
 });
 
-export function UserLoginContextProvider({children}) {
-  const [user, setUser] = useState(false);
+const RICK_MORTY_KEY = "RICK_MORTY_KEY";
 
-  function login(user, e) {
-    e.preventDefault();
-    if (user.email === "smj_personal@hotmail.com" && user.password === "555") {
+export function UserLoginContextProvider({children}) {
+  const [user, setUser] = useState(
+    localStorage.getItem(RICK_MORTY_KEY ?? null)
+  );
+
+  function login(user) {
+    console.log(user);
+    if (
+      user.email === "smj_personal@hotmail.com" &&
+      user.password === "Santi555"
+    ) {
       setUser(user);
+      localStorage.setItem(RICK_MORTY_KEY, user.email);
+    } else {
+      console.log("Contraseña Incorrecta");
     }
   }
 

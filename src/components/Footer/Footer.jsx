@@ -8,7 +8,7 @@ export default function Footer() {
             src="./src/assets/rick_morty.png"
             alt="Morty-Cabreado"
           ></img>
-          <h2>Gracias por la visita!</h2>
+          <h2>¡Gracias por la visita!</h2>
           <p>
             Rick y Morty es una serie de televisión estadounidense de animación
             para adultos creada por Justin Roiland y Dan Harmon en 2013 para

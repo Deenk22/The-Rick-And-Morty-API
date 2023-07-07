@@ -1,5 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Barrio&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
+
+
+/* GENERAL DESIGN */
 
 *{
     margin: 0;
@@ -8,9 +11,80 @@
 }
 
 body {
-    background-color: #222;
-    cursor: url(./assets/UFO.png), pointer;
+    background-color: #1f1d1d;
+    background-image: url(./assets/fondo.png);
+    /* cursor: url(./assets/UFO.png), pointer; */
 }
+
+/* LANDING DESIGN */
+
+/* .bg{
+    width: 1920px;
+    height: 927px;
+    background-image: url(./assets/wallpaperbetter.jpg);
+    background-size: cover;
+} */
+
+.landing{
+    border-radius: 16px;
+    margin-top: 16px;
+}
+
+.landing-container{
+    text-align: center;
+}
+
+.landing-container h1{
+    font-family: 'Architects Daughter', cursive;
+    font-size: 48px;
+    color: #f8f729;
+}
+
+.landing-container p{
+    font-family: 'Nothing You Could Do', cursive;
+    color: #FFFDFA;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0px 32px 8px 32px;
+    padding: 0;
+}
+
+/* LOGIN */
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    color: #FFFDFA;
+    text-align: center;
+}
+
+.login-form input{
+    color: #FFFDFA;
+    padding: 16px;
+    width: 300px; 
+    border-radius: 8px;
+    outline: none;
+    background-image: url(./assets/li-cover.png);
+    background-position: top;
+    background-size: cover;
+}
+
+.login-form button{
+    font-family: 'Nothing You Could Do', cursive;
+    background-color: #233b29;
+    color: #FFFDFA;
+    border: none;
+    border-radius: 8px;
+    margin-top: 16px;
+    padding: 8px 32px 8px 32px;
+}
+
+
+/* NAVBAR DESIGN */
 
 .nav{
     font-family: 'Architects Daughter', cursive;
@@ -18,10 +92,9 @@ body {
     justify-content: center;
     margin-top: 16px;
     gap: 32px;
-    background-color: #233b29;
     padding: 8px;
-    margin-left: 48px;
-    margin-right: 48px;
+    margin-left: 16px;
+    margin-right: 16px;
     border-radius: 8px;
 }
 
@@ -36,6 +109,7 @@ body {
 }
 
 .RM img{
+    width: 90%;
     border-radius: 16px;   
 }
 
@@ -46,30 +120,33 @@ body {
     padding-bottom: 32px;
 } */
 
-.prox{
+/* .prox{
     font-family: 'Architects Daughter', cursive;
     text-align: center;
     font-size: 150px;
     color: #FFFDFA;
-}
+} */
 
-.carrusel-img{
+/* .carrusel-img{
     display: flex;
     justify-content: center;
-    gap: 64px;
-    opacity: .14;
-    background-color: #233b29;
+    width: 100%;
+    gap: 72px;
+    opacity: .1;
     padding: 16px;
-    margin: 32px 16px;
+    margin-bottom: 16px;
     border-radius: 18px;
-}
+} */
+
+/* CARDS */
 
 .characters ul{
     display: flex;
     flex-wrap: wrap;
     list-style: none;
     gap: 8px;
-    margin-left: 32px;
+    margin-top: 32px;
+    margin-left: 40px;
 }
 
 .characters li{
@@ -85,24 +162,25 @@ body {
 .characters li img{
     border-radius: 8px;
     margin-top: 16px;
-    box-shadow: 4px 4px 16px #222;
 }
 
 .characters li p{
-    
+    font-family: cursive;
     color: #FFFDFA;
     margin-bottom: 16px;
 }
 
 .characters li h4 {
-    font-family: 'Barrio', cursive;
+    font-family: 'Nothing You Could Do', cursive;
     font-size: 20px;
     color: #FFFDFA;
     margin-bottom: -8px;
 }
 
 .characters ul li:hover{
-    background-color: #233b29;
+    background-image: url(./assets/li-cover.png);
+    background-size: cover;
+    /* background-color: #233b29; */
     /* cursor: url(./assets/Monster2.png), pointer; */
 }
 
@@ -110,47 +188,45 @@ body {
     color: #222;
     text-decoration: none;
     margin-bottom: 16px;
-    background-color: #eeee29;
-    padding: 8px;
-    border-radius: 8px;
+    background-color: #f8f729;
 }
 
 /* link-characters */
 
-.btn-container{
+/* .btn-container{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 64px;
     gap: 16px;
-}
+} */
 
-.btn-container img{
+/* .btn-container img{
     display: flex;
     align-items: center;
-}
+} */
 
-.btn-container button{
+/* .btn-container button{
     padding: 16px;
     background-color: #233b29;
     border: none;
     border-radius: 4px;
     transition: 100ms;
     cursor: url(./assets/RickCursor.png), pointer;
-}
+} */
 
-.btn-container button:hover{
+/* .btn-container button:hover{
     background-color: #222;
     color: #FFFDFA;
     outline: none;
     box-shadow: 0 0 0 2px #fffdfa;
-}
+} */
 
-.btn-container label{
+/* .btn-container label{
     color: #FFFDFA;
-}
+} */
 
-.btn-container input{
+/* .btn-container input{
     color: #222;
     width: 400px;
     height: 40px;
@@ -159,7 +235,7 @@ body {
     text-align: left;
     outline: none;
     transition: 200ms;
-}
+} */
 
 .footer{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -203,18 +279,18 @@ body {
     border-radius: 16px;
 }
 
-.p-img{
+/* .p-img{
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-}
+} */
 
-.p-img p{
+/* .p-img p{
     margin-top: 16px;
     text-align: center;
     
-}
+} */
 
 /* .footer-container01 img:hover{
     cursor: url(./assets/RickCursor.png),
@@ -222,37 +298,11 @@ body {
 } */
 
 
-
-@keyframes slideInLeft {
-
-    from {
-        transform: translateX(-600px);
-    }
-
-    to {
-        transform: translateX(0);
-    }
-}
-
-.img-morty {
-
-    /* Misma transition pero reducida */
-    animation: slideInLeft 3s ease-in 0s 1 normal none;
-
-    /* animation-name: slideInLeft;
-    animation-duration: 1s;
-    animation-timing-function: ease-in;
-    animation-delay: 0s;
-    animation-iteration-count: 1;
-    animation-direction: normal;
-    animation-fill-mode: none; */
-}
-
 /* CHARACTERS INFO */
 
-.details-character h1,p{
+/* .details-character h1,p{
     display: inline-block;
-}
+} */
 
 .details-character h1{
     font-family: 'Architects Daughter', cursive;
@@ -305,11 +355,9 @@ body {
     margin: 0px 0px 32px 0px;
 }
 
-.link-tologin{
-    font-family: 'Architects Daughter', cursive;
-    color: #eeee29;
-    text-align: center;
-}
+/* Retocar */
+
+
 
 .link-tologin button{
     margin-top: 16px;
@@ -329,15 +377,66 @@ body {
     color: #eeee29;
 }
 
-.text-info{
-    text-align: center;
+
+
+
+
+
+
+/* KEYFRAMES */
+
+@keyframes slideLeft {
+
+    from {
+        transform: translateX(-64px);
+    }
+
+    to {
+        transform: translateX(64px);
+    }
 }
 
-.text-info p{
-    font-family: cursive;
-    color: #FFFDFA;
-    margin-top: 40px;
+.monster-icon {
+
+    /* Misma transition pero reducida */
+    animation: slideLeft 1s ease-in-out 0s infinite alternate;
+    /* animation-name: slideInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none; */
+    margin-top: 8px;
+    
 }
+
+@keyframes slideInLeft {
+
+    from {
+        transform: translateX(-600px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.img-morty {
+
+    /* Misma transition pero reducida */
+    animation: slideInLeft 3s ease-in 0s 1 normal none;
+
+    /* animation-name: slideInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none; */
+}
+
+
 
 
 
