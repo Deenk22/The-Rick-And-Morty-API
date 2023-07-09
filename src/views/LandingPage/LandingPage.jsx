@@ -15,9 +15,9 @@ export default function LandingPage() {
         <h1>Click on the Planet</h1>
         <Link to="login">
           <img
-            className="monster-icon"
+            className="planet-icon"
             src="./src/assets/universe_planet.png"
-            alt="Monster Icon"
+            alt="Planet-Icon"
             width="5%"
           />
         </Link>

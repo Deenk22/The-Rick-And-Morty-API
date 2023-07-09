@@ -8,11 +8,12 @@ export default function Footer() {
             src="./src/assets/rick_morty.png"
             alt="Morty-Cabreado"
           ></img>
-          <h2>¡Gracias por la visita!</h2>
+          <h2>Thank you for visiting!</h2>
           <p>
-            Rick y Morty es una serie de televisión estadounidense de animación
-            para adultos creada por Justin Roiland y Dan Harmon en 2013 para
-            Adult Swim, también se emitió en Cartoon Network.
+            Rick and Morty is an American animated television series for adults
+            created by Justin Roiland and Dan Harmon in 2013 created by Justin
+            Roiland and Dan Harmon in 2013 for Adult Swim. Adult Swim, also
+            aired on Cartoon Network.
           </p>
         </div>
         <div className="footer-container02">
@@ -25,10 +26,12 @@ export default function Footer() {
           </a>
           <div className="p-img">
             <p>
-              Rick y Morty: Tras estar desaparecido casi 20 años Rick Sánchez
-              aparece inesperadamente en casa de su hija Beth y se queda allí a
-              vivir con ella y su familia. Beth acoge a Rick en su casa con los
-              brazos abiertos.
+              Rick and Morty: After being missing for almost 20 years, Rick
+              Sanchez unexpectedly shows up at his daughter Beth's house and
+              moves in with her and her family. shows up unexpectedly at his
+              daughter Beth's house and moves in with her and her family. her
+              and her family. Beth welcomes Rick into her home with open arms.
+              open arms.
             </p>
           </div>
         </div>

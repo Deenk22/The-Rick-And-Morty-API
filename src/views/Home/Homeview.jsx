@@ -1,25 +1,15 @@
-import {Link} from "react-router-dom";
-export default function Homeviews({charactersInfo}) {
+import Cards from "../../components/Cards/Cards";
+import Pagination from "../../components/Pagination/Pagination";
+export default function Homeviews({
+  charactersInfo,
+  page,
+  totalPages,
+  onChange,
+}) {
   return (
     <>
-      <div className="characters">
-        <ul>
-          {charactersInfo?.results.map((character) => (
-            <li key={character.id}>
-              <img
-                className="img-back"
-                width="200px"
-                src={character.image}
-              ></img>
-              <h4 className="name">{character.name}</h4>
-              <p>{character.location.name}</p>
-              <Link className="link-characters" to={`/${character.id}`}>
-                Details
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </div>
+      <Cards charactersInfo={charactersInfo} />
+      <Pagination totalPages={totalPages} page={page} onChange={onChange} />
     </>
   );
 }

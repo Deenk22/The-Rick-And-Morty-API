@@ -23,7 +23,7 @@ function App() {
         <Route element={<PrivateRoute />}>
           <Route element={<Layout />}>
             <Route path="/home" element={<Home />} />
-            <Route path="/:id" element={<CharacterDetails />} />
+            <Route path="/character/:id" element={<CharacterDetails />} />
             <Route path="/about" element={<About />} />
           </Route>
         </Route>

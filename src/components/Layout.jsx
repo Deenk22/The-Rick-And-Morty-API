@@ -1,13 +1,16 @@
-import {Outlet} from "react-router-dom";
+import {Outlet, useLocation} from "react-router-dom";
 import Navbar from "./Navbar/Navbar";
-import Title from "./Title/Title";
 import Footer from "./Footer/Footer";
 
 export default function Layout() {
+  // const location = useLocation();
+  // const withOutTitle = ["/character/:id", "/about"];
+  // const findAndRemove = withOutTitle.some((route) =>
+  // location.pathname.includes(route)
+  // );
   return (
     <>
       <Navbar />
-      <Title />
       <Outlet />
       <Footer />
     </>
