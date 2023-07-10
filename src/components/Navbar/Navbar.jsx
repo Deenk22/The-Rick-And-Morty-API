@@ -1,6 +1,7 @@
 import {Link} from "react-router-dom";
 import {useUserLoginContext} from "../../context/UserLoginContext";
 import LogoutIcon from "@mui/icons-material/Logout";
+
 export default function Navbar() {
   const {logout} = useUserLoginContext();
   return (

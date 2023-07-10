@@ -173,7 +173,7 @@ body {
 }
 
 .search-container button{
-    padding: 9.50px;
+    padding: 8px;
     border: none;
     outline: none;
     border-bottom-right-radius: 8px;
@@ -265,8 +265,11 @@ body {
     flex-direction: column;
     margin: 16px 32px;
     gap: 16px;
-    padding: 32px;
+    padding: 64px;
     background-color: #233b29;
+    /* background-image: url(./assets/RocketOuterSpace.jpg);
+    background-size: cover;
+    background-position: bottom; */
     border-radius: 16px;
 }
 
@@ -291,9 +294,9 @@ body {
     border-radius: 8px;
     border: 2px solid #eeee29;
     width: 20%;
-    background-image: url(./assets/probando.jpg);
+    /* background-image: url(./assets/probando.jpg);
     background-size: cover;
-    background-position: bottom;
+    background-position: bottom; */
 }
 
 /* --- STATUS DETAILS --- */
