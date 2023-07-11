@@ -26,6 +26,7 @@ export default function CharacterInfoView({info}) {
     <>
       {info ? (
         <div className="details-character">
+          <div className="object"></div>
           <img className={bgRick} src={info.image} alt={info.name} />
           <div className="general-info">
             {info.type ? <p>Type: {info.type}</p> : null}
@@ -39,6 +40,11 @@ export default function CharacterInfoView({info}) {
       <div className="link-details">
         <Link className="back-characters" to="/home">
           Back to Characters
+        </Link>
+      </div>
+      <div className="link-details">
+        <Link className="back-characters" to="/about">
+          Go to about Rick and Morty
         </Link>
       </div>
     </>

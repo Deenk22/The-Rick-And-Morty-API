@@ -1,7 +1,7 @@
 import {useEffect, useState} from "react";
 import Homeviews from "./Homeview";
 import Title from "../../components/Title/Title";
-import Search from "../../components/Search/Search";
+
 // import UseFetch from "../../components/useFetch/UseFetch";
 
 // const apiData = UseFetch(`https://rickandmortyapi.com/api/character`);
@@ -33,7 +33,6 @@ export default function Home() {
   return (
     <>
       <Title />
-      <Search />
       <Homeviews
         charactersInfo={characters}
         page={page}
