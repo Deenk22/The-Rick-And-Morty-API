@@ -1,9 +1,9 @@
-export default function Search() {
+export default function Search({value, onChange}) {
   return (
     <>
       <div className="search-container">
-        <input type="search" />
-        <button>Search</button>
+        <input value={value} onChange={onChange} type="search" />
+        <button>Search Characters</button>
       </div>
     </>
   );

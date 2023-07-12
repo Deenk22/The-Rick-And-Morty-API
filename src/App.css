@@ -138,7 +138,7 @@ body {
 .nav a:hover {
     background-color: #233b29;
     color: #FFFDFA;
-    box-shadow: 0px 0px 0px 2px #eeee29;
+    box-shadow: 0px 0px 0px 1px #eeee29;
     padding: 8px;
     border-radius: 4px;
 }
@@ -168,7 +168,6 @@ body {
     padding: 8px;
     margin: 16px 0px 16px 0px;
     border: none;
-    border-top-left-radius: 16px;
     outline: none;
     background-color: #233b29;
     color: #FFFDFA;
@@ -185,11 +184,11 @@ body {
     transition: 50ms;
 }
 
-.search-container button:hover{
+/* .search-container button:hover{
     background-color: #eeee29;
     color: #233b29;
     border: 1px solid #FFFDFA;
-}
+} */
 
 /* --- CARDS --- */
 
@@ -211,7 +210,7 @@ body {
     gap: 16px;
     border: 2px solid #FFFDFA;
     border-radius: 8px;
-    transition: 150ms;
+    transition: 80ms;
     overflow: hidden;
 }
 
@@ -264,9 +263,6 @@ body {
 /* --- CHARACTERS DETAILS --- */ 
 
 .object{
-    background-image: url(./assets/universe_planet.png);
-    background-size: cover;
-    background-position: right;
     border-radius: 50%;
     width: 50px;
     height: 50px;
@@ -284,34 +280,34 @@ body {
     box-shadow: 0px 16px 0px 4px #a9d3e9;
     border-radius: 8px;
     border: 2px solid #233b29;
-    transition: 150ms;
+    /* transition: 150ms; */
 }
 
-.bg-rick:hover{
+/* .bg-rick:hover{
     rotate: 360deg;
-    transform: translate(0px, 100px);
+    transform: translate(0px, 2px);
     cursor: url(./assets/Monster2.png), auto;
-}
+} */
 
 .bg-no-rick{
     box-shadow: 0px 16px 0px 4px #eeee29;
     border-radius: 8px;
     border: 2px solid #233b29;
-    transition: 200ms;
+    /* transition: 200ms; */
 }
 
-.bg-no-rick:hover{
+/* .bg-no-rick:hover{
     rotate: 360deg;
-    transform: translate(0px, 100px);
-}
+    transform: translate(0px, 2px);
+} */
 
 .details-character{
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 16px 32px;
+    margin: 16px 32px 32px 32px;
     gap: 16px;
-    padding: 64px;
+    padding: 16px;
     background-color: #233b29;
     /* background-image: url(./assets/RocketOuterSpace.jpg);
     background-size: cover;
@@ -327,9 +323,16 @@ body {
     padding: 16px;
 }
 
-.link-details{
-    text-align: center;
-    margin: 32px 0px 32px 0px;
+.link-container{
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+}
+
+.individual-link{
+    display: inline-block;
+    background-color: #1f1d1d;
+  
 }
 
 .back-characters{
@@ -337,12 +340,49 @@ body {
     text-decoration: none;
     color: #FFFDFA;
     padding: 8px;
-    border-radius: 8px;
-    border: 2px solid #eeee29;
-    width: 20%;
+    border: 1px solid #eeee29;
+    /* width: 20%; */
     /* background-image: url(./assets/probando.jpg);
     background-size: cover;
     background-position: bottom; */
+}
+
+.full-planets-container h2{
+    font-family: 'Architects Daughter', cursive;
+    letter-spacing: 2px;
+    font-size: 48px;
+    color: #eeee29;
+    text-align: center;
+    text-align: center;
+    margin: 64px 0px 32px 0px;
+}
+
+.planets-views{
+    display: inline-block;
+    margin: 0px 16px 0px 16px;
+}
+
+.planets-views h5{
+    font-family: 'Nothing You Could Do', cursive;
+    display: inline-block;
+    color: #eeee29;
+    margin-top: 8px;
+    margin: 0px 16px 0px 16px;
+}
+
+.planets-container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.planet-form{
+    width: 150px;
+    height: 150px;
+    background: #eeee29;
+    border-radius: 50%;
+    margin-bottom: 16px;
 }
 
 /* --- STATUS DETAILS --- */
@@ -428,10 +468,6 @@ body {
     transition: 100ms;
 }
 
-.img-about h2:hover{
-    color: #FFFDFA;
-}
-
 .link-starring{
     text-decoration: none;
 }
@@ -493,6 +529,24 @@ body {
 .footer-container02 img{
     margin-bottom: -16px;
 }
+
+.social-media{
+    color: #eeee29;
+    transition: 100ms;
+}
+
+.social-media:hover{
+    transform: rotate(10deg) scale(1.25);
+    color: #a9d3e9;
+}
+
+.link-footer-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
+
 
 /* Retocar */
 

@@ -5,27 +5,33 @@ import Title from "../../components/Title/Title";
 // import UseFetch from "../../components/useFetch/UseFetch";
 
 // const apiData = UseFetch(`https://rickandmortyapi.com/api/character`);
+const numPage = 1;
 
 export default function Home() {
   const [characters, setCharacters] = useState(null);
-  const [page, setPage] = useState(1);
+  const [page, setPage] = useState(numPage);
+  const [searchCharacters, setSearchCharacters] = useState("");
 
   function handleChange(event, value) {
     setPage(value);
+  }
+
+  function handleSearch(e) {
+    setSearchCharacters(e.target.value);
   }
 
   useEffect(
     function () {
       async function fetchData() {
         const response = await fetch(
-          `https://rickandmortyapi.com/api/character/?page=${page}`
+          `https://rickandmortyapi.com/api/character/?page=${page}&name=${searchCharacters}`
         );
         const charactersData = await response.json();
         setCharacters(charactersData);
       }
       fetchData();
     },
-    [page]
+    [page, searchCharacters]
   );
 
   // const data = apiData.read();
@@ -38,6 +44,8 @@ export default function Home() {
         page={page}
         totalPages={characters?.info.pages}
         onChange={handleChange}
+        onSearch={handleSearch}
+        searchCharacters={searchCharacters}
       />
     </>
   );

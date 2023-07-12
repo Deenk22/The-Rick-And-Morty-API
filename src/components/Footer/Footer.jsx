@@ -1,13 +1,19 @@
+import {Link} from "react-router-dom";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import StoreIcon from "@mui/icons-material/Store";
+import SportsEsportsIcon from "@mui/icons-material/SportsEsports";
+import FacebookIcon from "@mui/icons-material/Facebook";
 export default function Footer() {
   return (
     <>
       <div className="footer">
         <div className="footer-container01">
-          <img
+          {/* <img
             width="50px"
             src="./src/assets/rick_morty.png"
             alt="Morty-Cabreado"
-          ></img>
+          ></img> */}
           <h2>Thank you for visiting!</h2>
           <p>
             Rick and Morty is an American animated television series for adults
@@ -17,13 +23,39 @@ export default function Footer() {
           </p>
         </div>
         <div className="footer-container02">
-          <a href="https://www.hbomax.com/es/es/series/urn:hbo:series:GXkRjxwjR68PDwwEAABKJ">
-            <img
-              width="60px"
-              src="./src/assets/icons8-hbo.svg"
-              alt="Icono-HBO"
-            ></img>
-          </a>
+          <p>Follow us on ;</p>
+          <div className="link-footer-container">
+            <Link
+              className="social-media"
+              to="https://www.instagram.com/rickandmorty/"
+            >
+              <InstagramIcon fontSize="large" />
+            </Link>
+            <Link
+              className="social-media"
+              to="https://twitter.com/RickandMorty"
+            >
+              <TwitterIcon fontSize="large" />
+            </Link>
+            <Link
+              className="social-media"
+              to="https://www.adultswim.com/games/pocket-mortys"
+            >
+              <SportsEsportsIcon fontSize="large" />
+            </Link>
+            <Link
+              className="social-media"
+              to="https://wbshop.com/collections/rick-and-morty"
+            >
+              <StoreIcon fontSize="large" />
+            </Link>
+            <Link
+              className="social-media"
+              to="https://www.facebook.com/RickandMorty"
+            >
+              <FacebookIcon fontSize="large" />
+            </Link>
+          </div>
           <div className="p-img">
             <p>
               Rick and Morty: After being missing for almost 20 years, Rick

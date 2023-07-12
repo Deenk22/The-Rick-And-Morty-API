@@ -6,10 +6,12 @@ export default function Homeviews({
   page,
   totalPages,
   onChange,
+  onSearch,
+  searchCharacters,
 }) {
   return (
     <>
-      <Search />
+      <Search onChange={onSearch} value={searchCharacters} />
       <Cards charactersInfo={charactersInfo} />
       <Pagination totalPages={totalPages} page={page} onChange={onChange} />
     </>
