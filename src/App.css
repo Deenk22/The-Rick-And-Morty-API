@@ -362,8 +362,9 @@ body {
     margin: 0px 16px 0px 16px;
 }
 
+
 .planets-views h5{
-    font-family: 'Nothing You Could Do', cursive;
+    font-family: monospace;
     display: inline-block;
     color: #eeee29;
     margin-top: 8px;
@@ -380,10 +381,13 @@ body {
 .planet-form{
     width: 150px;
     height: 150px;
-    background: #eeee29;
+    /* background: #eeee29; */
     border-radius: 50%;
     margin-bottom: 16px;
+    background: url(./assets/planet.png);
+    background-size: cover;
 }
+
 
 /* --- STATUS DETAILS --- */
 
@@ -761,6 +765,22 @@ body {
 .back-characters:active:before {
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
+}
+
+
+.planets-views {
+    animation: movementPlanet 1.8s ease-in-out 0s infinite alternate;
+}
+
+@keyframes movementPlanet {
+
+    from {
+        transform: translateX(-4px);
+    }
+
+    to {
+        transform: translateX(4px);
+    }
 }
 
 
