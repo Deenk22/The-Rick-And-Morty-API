@@ -18,7 +18,7 @@ export function UserLoginContextProvider({children}) {
   function login(user) {
     console.log(user);
     if (
-      user.email === "smj_personal@hotmail.com" &&
+      user.email === "rick_sanchez@gmail.com" &&
       user.password === "Santi555"
     ) {
       setUser(user);

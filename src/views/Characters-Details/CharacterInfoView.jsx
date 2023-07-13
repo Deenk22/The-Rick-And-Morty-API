@@ -1,13 +1,11 @@
 import {Link} from "react-router-dom";
-import Planets from "../../components/Planets/Planets";
-
 const statusColor = {
   Alive: "#89FC00",
   Dead: "#F25757",
   unknown: "#3dcfd1",
 };
 
-export default function CharacterInfoView({info, charactersColorPalette}) {
+export default function CharacterInfoView({info}) {
   let bgRick = "";
   if (info) {
     info.name.includes("Rick") ? (bgRick = "bg-rick") : (bgRick = "bg-no-rick");
@@ -42,9 +40,7 @@ export default function CharacterInfoView({info, charactersColorPalette}) {
           </div>
         </div>
       ) : null}
-      <div>
-        <Planets />
-      </div>
+      <div></div>
     </>
   );
 }

@@ -3,13 +3,13 @@ import {useState} from "react";
 import {useEffect} from "react";
 import CharacterInfoView from "./CharacterInfoView";
 
-const charactersColorPalette = {
-  Rick: "",
-  Morty: "",
-  Summer: "",
-  Beth: "",
-  Jerry: "",
-};
+// const charactersColorPalette = {
+//   Rick: "",
+//   Morty: "#F7F052",
+//   Summer: "",
+//   Beth: "",
+//   Jerry: "",
+// };
 
 export default function CharacterDetails() {
   const [infoPersonaje, setInfoPersonaje] = useState(null);
@@ -31,10 +31,7 @@ export default function CharacterDetails() {
 
   return (
     <>
-      <CharacterInfoView
-        charactersColorPalette={charactersColorPalette}
-        info={infoPersonaje}
-      />
+      <CharacterInfoView info={infoPersonaje} />
     </>
   );
 }

@@ -10,6 +10,7 @@ export default function Pagination({totalPages, page, onChange}) {
           onChange={onChange}
           color="secondary"
           shape="rounded"
+          size="large"
         />
       </Stack>
     </div>
