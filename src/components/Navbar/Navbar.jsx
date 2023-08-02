@@ -1,13 +1,21 @@
 import {Link} from "react-router-dom";
+import {roles} from "../../const/roles";
 import {useUserLoginContext} from "../../context/UserLoginContext";
 
 export default function Navbar() {
-  const {logout} = useUserLoginContext();
+  const {logout, user} = useUserLoginContext();
+  console.log(user);
   return (
     <>
       <div className="nav">
-        <Link to="home">CHARACTERS</Link>
-        <Link to="about">ABOUT RICK AND MORTY</Link>
+        {roles.ALL_USERS.includes(user.userRole) ? (
+          <Link to="/home">CHARACTERS</Link>
+        ) : null}
+
+        {user.userRole === roles.ADMIN ? (
+          <Link to="/about">ABOUT RICK AND MORTY</Link>
+        ) : null}
+
         <Link>SOON...</Link>
         <Link className="logout-link" onClick={logout}>
           LOGOUT

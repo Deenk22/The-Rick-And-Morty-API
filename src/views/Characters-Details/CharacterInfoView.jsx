@@ -1,4 +1,6 @@
 import {Link} from "react-router-dom";
+import {useUserLoginContext} from "../../context/UserLoginContext";
+import {roles} from "../../const/roles";
 const statusColor = {
   Alive: "#89FC00",
   Dead: "#F25757",
@@ -6,6 +8,7 @@ const statusColor = {
 };
 
 export default function CharacterInfoView({info}) {
+  const {user} = useUserLoginContext();
   let bgRick = "";
   if (info) {
     info.name.includes("Rick") ? (bgRick = "bg-rick") : (bgRick = "bg-no-rick");
@@ -32,11 +35,13 @@ export default function CharacterInfoView({info}) {
                 Back to Characters
               </Link>
             </div>
-            <div className="individual-link">
-              <Link className="back-characters" to="/about">
-                About Rick and Morty
-              </Link>
-            </div>
+            {user.userRole === roles.ADMIN ? (
+              <div className="individual-link">
+                <Link className="back-characters" to="/about">
+                  About Rick and Morty
+                </Link>
+              </div>
+            ) : null}
           </div>
         </div>
       ) : null}

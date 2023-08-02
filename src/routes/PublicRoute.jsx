@@ -4,7 +4,7 @@ import {useUserLoginContext} from "../context/UserLoginContext";
 export default function PublicRoute() {
   const {user} = useUserLoginContext();
   if (user) {
-    return <Navigate to="home" />;
+    return <Navigate to="/home" />;
   }
   return (
     <>

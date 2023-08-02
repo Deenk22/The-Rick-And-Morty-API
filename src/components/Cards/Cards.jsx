@@ -13,7 +13,7 @@ export default function Cards({charactersInfo}) {
               ></img>
               <Link
                 className="link-characters"
-                to={`/character/${character.id}`}
+                to={`character/${character.id}`}
               >
                 <h4 className="name">{character.name}</h4>
               </Link>

@@ -6,7 +6,9 @@ import Layout from "./components/Layout";
 import Home from "./views/Home/Home";
 import CharacterDetails from "./views/Characters-Details/CharacterDetail";
 import About from "./views/About/About";
+import Unauthorized from "./views/Unauthorized/Unauthorized";
 import "./App.css";
+import {roles} from "./const/roles";
 import PrivateRoute from "./routes/PrivateRoute";
 import PublicRoute from "./routes/PublicRoute";
 
@@ -17,15 +19,28 @@ function App() {
     <UserLoginContextProvider>
       <Routes>
         <Route path="/" element={<LandinPage />} />
+        {/* Rutas Públicas */}
         <Route element={<PublicRoute />}>
           <Route path="/login" element={<Login />} />
         </Route>
-        <Route element={<PrivateRoute />}>
+        <Route path="unauthorized" element={<Unauthorized />} />
+        {/* Rutas Privadas */}
+
+        <Route
+          path="home"
+          element={<PrivateRoute allowedRoles={roles.ALL_USERS} />}
+        >
           <Route element={<Layout />}>
-            <Route path="/home" element={<Home />} />
-            <Route path="/character/:id" element={<CharacterDetails />} />
-            <Route path="/about" element={<About />} />
+            <Route index element={<Home />} />
+            <Route path="character/:id" element={<CharacterDetails />} />
           </Route>
+        </Route>
+
+        <Route
+          path="about"
+          element={<PrivateRoute allowedRoles={roles.ADMIN} />}
+        >
+          <Route index element={<About />} />
         </Route>
       </Routes>
     </UserLoginContextProvider>

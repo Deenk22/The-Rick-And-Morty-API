@@ -33,17 +33,15 @@ export default function Home() {
         } else {
           const charactersData = await response.json();
           setCharacters(charactersData);
-          message(null);
+          setMessage(null);
         }
       }
       fetchData();
     },
-    [page, searchCharacters]
+    [page, searchCharacters, message]
   );
 
   // const data = apiData.read();
-
-  console.log(message);
 
   return (
     <>
